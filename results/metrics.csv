@@ -1,0 +1,4 @@
+method,accuracy
+Debate + Judge,0.65
+Direct QA,0.44166666666666665
+Self-Consistency,0.49166666666666664

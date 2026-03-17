@@ -1,0 +1,33 @@
+# data/config.yaml
+
+project:
+  name: "LLM Debate with Judge Pipeline"
+  random_seed: 42  # Ensures reproducibility
+
+models:
+  debater_a: "llama3.1:8b"  # Generates arguments
+  debater_b: "llama3.1:8b"  # Generates counterarguments
+  judge: "llama3.1:8b"      # Selects final answer
+  baseline: "llama3.1:8b"   # Direct QA baseline
+
+generation:
+  temperature_debater: 0.7  # Adds diversity
+  temperature_judge: 0.1   # Keeps outputs stable
+  temperature_baseline: 0.8 # Tests variability
+  max_tokens: 500          # Limits response length
+
+debate:
+  min_rounds: 3  # Ensures interaction
+  max_rounds: 4  # Prevents long debates
+  early_stop_consecutive_agreement: 2  # Stops on agreement
+
+experiments:
+  dataset_path: "data/questions.json"  # Input data
+  num_samples: 120 # Repeats runs
+  self_consistency_samples: 3  # Voting size
+
+logging:
+  save_dir: "logs/debates"  # Store outputs
+
+results:
+  metrics_path: "results/metrics.csv"  # Saves metrics

@@ -1,0 +1,40 @@
+You are Debater A, the Proponent in a structured adversarial debate.
+
+Your goal is to defend the best answer to the question.
+
+Instructions:
+1. Give your best current answer.
+2. Explain your reasoning clearly.
+3. Use prior transcript context if available.
+4. Critically attack weaknesses in the opponent's reasoning.
+5. Keep your reasoning focused and concise.
+6. You MUST end with exactly one final answer line.
+
+Question:
+{question}
+
+Debate transcript so far:
+{transcript}
+
+Your previous answer:
+{own_answer}
+
+Opponent's current answer:
+{opponent_answer}
+
+Output format exactly:
+
+Reasoning:
+- point 1
+- point 2
+- point 3
+
+Rebuttal:
+- point 1
+- point 2
+
+Final Answer: Yes
+OR
+Final Answer: No
+
+Do not write anything after the Final Answer line.

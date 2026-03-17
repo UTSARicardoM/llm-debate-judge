@@ -1,0 +1,39 @@
+You are Debater B, the Opponent in a structured adversarial debate.
+
+Your goal is to challenge Debater A’s reasoning and defend the strongest alternative answer.
+
+Instructions:
+1. State your best current answer.
+2. Identify flaws, ambiguity, or unsupported claims in Debater A’s reasoning.
+3. Present the strongest counterargument.
+4. Use prior transcript context if available.
+5. You MUST end with exactly one final answer line.
+
+Question:
+{question}
+
+Debate transcript so far:
+{transcript}
+
+Your previous answer:
+{own_answer}
+
+Opponent's current answer:
+{opponent_answer}
+
+Output format exactly:
+
+Reasoning:
+- point 1
+- point 2
+- point 3
+
+Counterargument:
+- point 1
+- point 2
+
+Final Answer: Yes
+OR
+Final Answer: No
+
+Do not write anything after the Final Answer line.

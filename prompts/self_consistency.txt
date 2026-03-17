@@ -1,0 +1,13 @@
+Answer the following question using careful reasoning.
+
+Question:
+{question}
+
+Output format exactly:
+
+Reasoning:
+- point 1
+- point 2
+- point 3
+
+Final Answer: <answer>
