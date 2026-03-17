@@ -56,9 +56,7 @@ Debate + judge had the best results based on the accuracy metric with 0.65, well
 | Direct QA           | 0.44     |
 | Self-Consistency    | 0.49     |
 
-<p align="center">
-  <img src="docs/figures/performance_comparison.png" alt="Accuracy Results" width="600"/>
-</p>
+![UI Screenshot](docs/ui_image.png)
 
 ## 3. Analysis
 Qualitative analysis of 3 selected adversarial debates  in a mutli-agent system and the relation to Irving et al. (2018)
