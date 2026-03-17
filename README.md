@@ -240,8 +240,6 @@ Do not write anything after the Final Answer line.
 </details>
 
 ### Streamlit UI to Ask for a Debate
-<p align="center"> 
-<img src="docs/ui_image.png" alt="UI Screenshot" width="600"/> 
-</p>
+![UI Screenshot](docs/ui_image.png)
 pip install -r requirements.txt
 python -m src.run_experiments
